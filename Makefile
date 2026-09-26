@@ -13,7 +13,6 @@ endef
 src = $(addprefix src/,\
   main.cpp \
 )
-)
 
 CPPFLAGS = -std=c++11 -fno-exceptions
 CPPFLAGS += -Os -Wall

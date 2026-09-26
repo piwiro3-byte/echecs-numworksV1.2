@@ -11,12 +11,8 @@ $(addprefix $(BUILD_DIR)/,$(addsuffix .o,$(basename $(1))))
 endef
 
 src = $(addprefix src/,\
-  alien.cpp \
-  life.cpp \
   main.cpp \
-  rocket.cpp \
-  spaceship.cpp \
-  score.cpp \
+)
 )
 
 CPPFLAGS = -std=c++11 -fno-exceptions

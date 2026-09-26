@@ -16,7 +16,7 @@ src = $(addprefix src/,\
 
 CPPFLAGS = -std=c++11 -fno-exceptions
 CPPFLAGS += -Os -Wall
-CPPFLAGS += $(shell $(NWLINK) eadk-cflags)
+CPPFLAGS += $(shell $(NWLINK) eadk-cflags-device)
 LDFLAGS = -Wl,--relocatable
 LDFLAGS += -nostartfiles
 LDFLAGS += --specs=nano.specs
